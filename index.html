@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RBH Studios — Calm software, crafted with care</title>
+  <meta name="description" content="RBH Studios is a small independent software studio designing calm, thoughtful apps. Our first releases are on the way." />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RBH Studios — Calm software, crafted with care" />
+  <meta property="og:description" content="A small independent studio designing thoughtful apps for everyday life." />
+  <meta property="og:site_name" content="RBH Studios" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"RBH Studios","description":"Independent studio designing calm, thoughtful apps.","email":"hello@rbhstudios.com"}
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__halo bg__halo--a"></div>
+    <div class="bg__halo bg__halo--b"></div>
+    <div class="bg__grain"></div>
+  </div>
+
+  <div class="aura" id="aura" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ── Nav ── -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="wordmark" href="#top" aria-label="RBH Studios home">RBH<sup>®</sup><span>Studios</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#focus">Focus</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--acc magnetic" href="#contact">Say hello</a>
+        <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#focus">Focus</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact" class="btn btn--acc">Say hello</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ── Hero ── -->
+    <section class="mast wrap">
+      <p class="mast__eyebrow reveal" data-reveal>An independent software studio</p>
+      <h1 class="mast__title">
+        <span class="reveal" data-reveal style="--d:.05s">Calm software,</span>
+        <span class="reveal" data-reveal style="--d:.12s"><em>crafted with care.</em></span>
+      </h1>
+      <p class="mast__lede reveal" data-reveal style="--d:.2s">
+        RBH Studios is a small team designing thoughtful apps for everyday life.
+        We believe software should lower your heart rate, not raise it.
+        Our first releases are on the way.
+      </p>
+      <div class="mast__cta reveal" data-reveal style="--d:.27s">
+        <a class="btn btn--acc magnetic" href="#contact">Get in touch</a>
+        <a class="btn btn--line" href="#focus">What we care about</a>
+      </div>
+      <p class="mast__status reveal" data-reveal style="--d:.33s"><span class="livedot" aria-hidden="true"></span> Currently building, first release in progress</p>
+    </section>
+
+    <!-- ── Focus ── -->
+    <section class="section wrap" id="focus">
+      <div class="sec-head reveal" data-reveal>
+        <p class="kicker">01 · Focus</p>
+        <h2>Three things guide <em>everything we make.</em></h2>
+      </div>
+      <div class="creed">
+        <div class="creed__item reveal" data-reveal><span>I.</span><div><h3>Calm over noise</h3><p>No shouting badges, no anxiety mechanics, no dark patterns. If a screen adds stress to someone's day, it does not ship.</p></div></div>
+        <div class="creed__item reveal" data-reveal><span>II.</span><div><h3>Fast and dependable</h3><p>Software should answer instantly and work offline. We sweat performance and reliability the way others sweat launch-day headlines.</p></div></div>
+        <div class="creed__item reveal" data-reveal><span>III.</span><div><h3>Private by default</h3><p>Your life stays yours. We design for on-device first, collect as little as possible, and never treat people as the product.</p></div></div>
+      </div>
+    </section>
+
+    <!-- ── Studio ── -->
+    <section class="section wrap studio" id="studio">
+      <div class="reveal" data-reveal>
+        <p class="kicker">02 · The studio</p>
+        <h2>Small on purpose.<br /><em>Senior only.</em></h2>
+        <p class="muted">RBH Studios is a tiny independent team. No account managers, no handoffs, no bloat. We would rather make one thing well than ten things quickly, and we plan to keep it that way as we grow.</p>
+      </div>
+      <ul class="facts reveal" data-reveal>
+        <li><b>Independent</b><span>No investors, no ads business. Our work answers to the people who use it.</span></li>
+        <li><b>Remote</b><span>A small crew working across time zones, together since day one.</span></li>
+        <li><b>Early days</b><span>We are heads down on our first releases. This page will grow as they do.</span></li>
+      </ul>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="section wrap" id="contact">
+      <div class="invite reveal" data-reveal>
+        <div class="invite__copy">
+          <p class="kicker">03 · Contact</p>
+          <h2>Say <em>hello.</em></h2>
+          <p class="muted">Questions, ideas, collaborations, or just encouragement while we build. Every message is read by a human on the team.</p>
+          <a class="invite__mail magnetic" href="mailto:hello@rbhstudios.com">hello@rbhstudios.com</a>
+        </div>
+        <form class="letter" id="contactForm" novalidate>
+          <label>Your name<input name="name" required placeholder="Ada Lovelace" autocomplete="name" /></label>
+          <label>Your email<input name="email" type="email" required placeholder="you@somewhere.com" autocomplete="email" /></label>
+          <label>Your message<textarea name="message" rows="5" required placeholder="Hello RBH, …"></textarea></label>
+          <button class="btn btn--acc" type="submit">Send →</button>
+          <p class="letter__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="wordmark" href="#top">RBH<sup>®</sup><span>Studios</span></a>
+        <p class="muted">Calm software, crafted with care.<br />© <span id="year">2026</span> RBH Studios.</p>
+      </div>
+      <nav aria-label="Footer"><b>Studio</b><a href="#focus">Focus</a><a href="#studio">Studio</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Footer contact"><b>Write</b><a href="mailto:hello@rbhstudios.com">hello@rbhstudios.com</a></nav>
+    </div>
+    <p class="footer__giant" aria-hidden="true">RBH</p>
+    <div class="wrap footer__base"><span>No trackers on this site</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
